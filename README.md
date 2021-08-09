@@ -1,16 +1,16 @@
 # Turtlebot3 Navigations
 
-Turtlebot3 package for autonomous navigation that uses the namespace `tb3`
+Turtlebot3 package for autonomous navigation that uses the namespace `tb3`.
+
+Tested on ROS Melodic Gazebo.
 
 
-## Dealinng with namespaces
-When using namespaces and/or multiple robots, separate `yaml` files need to be created to reflect the namespaces. These are the lcoations which need to be updated
+## Dealing with namespaces
+When using namespaces and/or multiple robots, separate `yaml` files need to be created to reflect the new namespaced topics. These are the locations which need to be updated
 
-- [**global_costmap_params**](./global_costmap_params.yaml)
+- [**global_costmap_params**](./param/global_costmap_params.yaml)
   - 
-- **local_costmap_params**
-  - 
-- **costmap_common_params_$(MODEL)**
+- [**local_costmap_params**](./param/global_costmap_params.yaml)
   - 
 
 To enable manual navigation via RVIZ, ensure the topics for the following are in the right namespace in your `rviz` config file:
