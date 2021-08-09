@@ -9,6 +9,7 @@ Panels:
         - /RobotModel1
         - /TF1/Frames1
         - /TF1/Tree1
+        - /LaserScan1
         - /Map1
         - /Global Map1
         - /Global Map1/Costmap1
@@ -38,7 +39,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: LaserScan
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -136,7 +137,7 @@ Visualization Manager:
       Axis: Z
       Channel Name: intensity
       Class: rviz/LaserScan
-      Color: 0; 255; 0
+      Color: 204; 0; 0
       Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
@@ -152,7 +153,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.030000001192092896
       Style: Flat Squares
-      Topic: /scan
+      Topic: /tb3/scan
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -319,7 +320,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: tb3/base_footprint
+    Fixed Frame: tb3/map
     Frame Rate: 30
   Name: root
   Tools:
@@ -338,7 +339,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: -1.5707963705062866
+      Angle: -1.550796389579773
       Class: rviz/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -348,7 +349,7 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 104.5478515625
+      Scale: 163.17662048339844
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz)
       X: 0

@@ -28,11 +28,11 @@
 
 
   <!-- AMCL -->
-  <!-- <include file="$(find tb3_navigations)/launch/amcl.launch">
+  <include file="$(find tb3_navigations)/launch/amcl.launch">
     <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
     <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
     <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
-  </include> -->
+  </include>
 
   <!-- move_base -->
   <include file="$(find tb3_navigations)/launch/move_base.launch">

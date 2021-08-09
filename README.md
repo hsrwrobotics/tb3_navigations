@@ -19,8 +19,13 @@ To enable manual navigation via RVIZ, ensure the topics for the following are in
   - `move_base/NavfnROS/plan` in **Display** -> `rviz/Path`
 
 ## Autonomous Mapping
-The `explore_lite` launch file performs autonomous mapping of closed spaces. It uses the [explore_lite](http://wiki.ros.org/explore_lite) package, which can be installed as
+The `explore_lite` launch file performs autonomous mapping of closed spaces. It uses the [explore_lite](http://wiki.ros.org/explore_lite) package, which can be installed easily using 
 
 ```bash
 sudo apt-get install ros-<DISTRO>-explore-lite
 ```
+
+or from source(which is what I did) as follows
+```bash
+cd catkin_ws
+git clone --single-branch --branch <ROS_distro>-devel https://github.com/hrnr/m-explore.git
