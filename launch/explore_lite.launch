@@ -31,7 +31,7 @@
 
     <!-- Explorer -->
     <node pkg="explore_lite" type="explore" respawn="true" name="explore" output="screen">
-      <rosparam file="$(find tb3_navigations)/config/exploration.yaml" command="load" />
+      <rosparam file="$(find tb3_navigations)/param/exploration.yaml" command="load" />
     </node>
 
     <!-- rviz -->
