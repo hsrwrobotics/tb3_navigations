@@ -33,6 +33,8 @@ cd catkin_ws
 git clone --single-branch --branch <ROS_distro>-devel https://github.com/hrnr/m-explore.git
 ```
 
+This works, but is not perfect; could use more fine tuning to work in complex worlds.
+
 ## Localization
 
 Use the `global_localization` and `nomotion_update`/`request_nomotion_update` services for localization. Refer to this [tutorial][1] for more info
